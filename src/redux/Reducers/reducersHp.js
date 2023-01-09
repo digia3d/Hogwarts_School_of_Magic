@@ -4,7 +4,7 @@ const CHARACTERS = 'harryPotter/hp/CHARACTERS';
 
 const initialState = [];
 
-export default function charactersReducer(state = initialState, action) {
+export default function hpReducer(state = initialState, action) {
   switch (action.type) {
     case CHARACTERS:
       return action.payload;
