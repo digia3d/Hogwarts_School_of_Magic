@@ -1,0 +1,50 @@
+html {
+  background-color: rgb(23, 13, 72);
+  align-items: center;
+}
+
+.welcome-title {
+  text-align: center;
+  margin: 20px;
+}
+
+.home-section {
+  position: relative;
+  height: 100%;
+  background-color: rgb(23, 13, 72);
+  overflow: hidden;
+}
+
+.house-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 20px;
+}
+
+.house-cards img {
+  width: 100%;
+  height: 100%;
+}
+
+card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #c0972f;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  text-align: center;
+  color: #c0972f;
+  font-weight: bold;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
