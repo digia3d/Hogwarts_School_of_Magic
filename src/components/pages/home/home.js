@@ -12,6 +12,8 @@ function Home() {
     <>
       <section className="home-section">
         <Sparkles
+          max-width="max-content"
+          max-height="max-content"
           color="white"
           fadeOutSpeed={10}
           newSparkleOnFadeOut={false}
