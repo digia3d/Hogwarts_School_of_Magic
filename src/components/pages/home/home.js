@@ -12,14 +12,13 @@ function Home() {
     <>
       <section className="home-section">
         <Sparkles
-          max-width="max-content"
-          max-height="max-content"
           color="white"
-          fadeOutSpeed={10}
-          newSparkleOnFadeOut={false}
-          flicker
-          flickerSpeed="fast"
-          count={80}
+          minSize={7}
+          maxSize={12}
+          overflowPx={80}
+          fadeOutSpeed={30}
+          flicker={false}
+          count={120}
         />
         <h1 className="welcome-title">Hogwarts houses</h1>
         <div className="house-cards">

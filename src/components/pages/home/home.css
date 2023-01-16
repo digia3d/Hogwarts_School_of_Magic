@@ -48,3 +48,9 @@ card {
   margin: 20px;
   padding: 20px;
 }
+
+.box {
+  position: relative; /* mandatory */
+  width: 140px;
+  height: 140px;
+}
