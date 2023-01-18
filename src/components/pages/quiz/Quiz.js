@@ -101,7 +101,7 @@ function Quiz() {
                   </div>
                   <div className="answer-section">
                     {questions[currentQuestion].answerOptions.map((answerOption) => (
-                      <button type="button" onClick={() => { answerHandler(answerOption.gryffindor, answerOption.slytherin, answerOption.ravenclaw, answerOption.hufflepuff); }}>{answerOption.optionText}</button>
+                      <button type="button" key={answerOption.id} onClick={() => { answerHandler(answerOption.gryffindor, answerOption.slytherin, answerOption.ravenclaw, answerOption.hufflepuff); }}>{answerOption.optionText}</button>
                     ))}
                   </div>
                 </div>
