@@ -3,13 +3,6 @@ import React from 'react';
 
 const HogwartsHouse = (prop) => {
   const {
-    name,
-    species,
-    gender,
-    dateOfBirth,
-    yearOfBirth,
-    house,
-    image,
   } = prop;
 
   return (
