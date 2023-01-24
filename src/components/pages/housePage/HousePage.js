@@ -3,13 +3,13 @@ import axios from 'axios';
 import PropTypes from 'prop-types';
 
 function HousePage({ house }) {
-  const [people, setPeople] = useState([]);
+  const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
     axios
       .get(`https://hp-api.onrender.com/api/characters/house/${house}`)
       .then((response) => {
-        setPeople(response.data);
+        setCharacters(response.data);
       })
       .catch((error) => {
         console.log(error);
@@ -18,11 +18,13 @@ function HousePage({ house }) {
 
   return (
     <div>
-      {people.map((person) => (
-        <div className="person-card" key={person.id}>
-          <p>{person.name}</p>
-          <p>{person.house}</p>
-          <p>{person.bloodStatus}</p>
+      {characters.map((character) => (
+        <div className="character-card" key={character.id}>
+          <p>{character.name}</p>
+          <p>{character.house}</p>
+          <p>{character.bloodStatus}</p>
+          <p>{character.species}</p>
+          <img src={character.image} alt={character.name} />
         </div>
       ))}
     </div>

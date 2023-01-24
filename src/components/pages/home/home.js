@@ -1,10 +1,10 @@
-import { React } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './home.css';
 import Sparkles from 'react-sparkle';
 import Slytherin from '../../../assets/images/Slytherin.png';
-import Grifindor from '../../../assets/images/Grifindor.png';
-import Hufflepuf from '../../../assets/images/Hufflepuf.png';
+import Gryffindor from '../../../assets/images/Gryffindor.png';
+import Hufflepuff from '../../../assets/images/Hufflepuff.png';
 import Ravenclaw from '../../../assets/images/Ravenclaw.png';
 
 function Home() {
@@ -22,31 +22,46 @@ function Home() {
         />
         <h1 className="welcome-title">Hogwarts houses</h1>
         <div className="house-cards">
-          <card>
+          <div>
             <Link to={{
               pathname: '/house',
               state: { house: 'Gryffindor' },
             }}
             >
-              <img src={Grifindor} alt="grifindor" />
+              <img src={Gryffindor} alt="Gryffindor" />
+              <p>Gryffindor</p>
             </Link>
-          </card>
-          <card>
-            Ravenclaw
-            <div>
-              <img src={Ravenclaw} alt="ravenclaw" />
-            </div>
-          </card>
-          <card>
-            Hufflepuf
-            <img src={Hufflepuf} alt="hafflepuf" />
-          </card>
-          <card>
-            Slyterin
-            <div className="imgH">
-              <img src={Slytherin} alt="slytherin" />
-            </div>
-          </card>
+          </div>
+          <div>
+            <Link to={{
+              pathname: '/house',
+              state: { house: 'Ravenclaw' },
+            }}
+            >
+              <img src={Ravenclaw} alt="Ravenclaw" />
+              <p>Ravenclaw</p>
+            </Link>
+          </div>
+          <div>
+            <Link to={{
+              pathname: '/house',
+              state: { house: 'Hufflepuff' },
+            }}
+            >
+              <img src={Hufflepuff} alt="Hufflepuff" />
+              <p>Hufflepuff</p>
+            </Link>
+          </div>
+          <div>
+            <Link to={{
+              pathname: '/house',
+              state: { house: 'Slytherin' },
+            }}
+            >
+              <img src={Slytherin} alt="Slytherin" />
+              <p>Slytherin</p>
+            </Link>
+          </div>
         </div>
         <div className="btn-container">
           <p>In which house do you belong?</p>
