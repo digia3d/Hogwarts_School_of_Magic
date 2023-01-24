@@ -4,7 +4,7 @@ import './App.css';
 import Home from './components/pages/home/home';
 import LandingPage from './components/pages/leandingPage/landingPage';
 import Quiz from './components/pages/quiz/Quiz';
-import HousePage from './components/pages/housePage/HousePage'; 
+import HousePage from './components/pages/housePage/HousePage';
 
 function App() {
   return (
