@@ -1,5 +1,5 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import hpReducer from '../Reducers/reducersHp';
+import hpReducer from './reducersHp';
 
 const rootReducer = combineReducers({
   reducersHp: hpReducer,

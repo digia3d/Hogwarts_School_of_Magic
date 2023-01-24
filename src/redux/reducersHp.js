@@ -1,4 +1,5 @@
-import URL_API from '../api';
+import axios from 'axios';
+import URL_API from '../components/api';
 
 const CHARACTERS = 'harryPotter/hp/CHARACTERS';
 
@@ -19,7 +20,10 @@ export const addCharacter = (payload) => ({
 });
 
 export const getCharacters = () => async (dispatch) => {
-  await fetch(URL_API)
-    .then((res) => res.json())
-    .then((data) => { dispatch(addCharacter(data.list)); });
+  try {
+    const response = await axios.get(URL_API);
+    dispatch(addCharacter(response.data));
+  } catch (error) {
+    console.log(error);
+  }
 };

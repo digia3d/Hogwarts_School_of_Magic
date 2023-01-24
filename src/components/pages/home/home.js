@@ -23,10 +23,13 @@ function Home() {
         <h1 className="welcome-title">Hogwarts houses</h1>
         <div className="house-cards">
           <card>
-            Grifindor
-            <div>
+            <Link to={{
+              pathname: '/house',
+              state: { house: 'Gryffindor' },
+            }}
+            >
               <img src={Grifindor} alt="grifindor" />
-            </div>
+            </Link>
           </card>
           <card>
             Ravenclaw
