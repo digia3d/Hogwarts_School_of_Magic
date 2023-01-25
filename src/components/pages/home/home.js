@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './home.css';
 import Sparkles from 'react-sparkle';
@@ -6,6 +7,7 @@ import Slytherin from '../../../assets/images/Slytherin.png';
 import Gryffindor from '../../../assets/images/Gryffindor.png';
 import Hufflepuff from '../../../assets/images/Hufflepuff.png';
 import Ravenclaw from '../../../assets/images/Ravenclaw.png';
+import { fetchCharactersByHouse } from
 
 function Home() {
   return (
@@ -24,7 +26,7 @@ function Home() {
         <div className="house-cards">
           <div>
             <Link to={{
-              pathname: '/house',
+              pathname: '/HousePage',
               state: { house: 'Gryffindor' },
             }}
             >
