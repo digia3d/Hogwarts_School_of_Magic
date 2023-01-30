@@ -4,7 +4,7 @@ import './App.css';
 import Home from './components/pages/home/home';
 import LandingPage from './components/pages/leandingPage/landingPage';
 import Quiz from './components/pages/quiz/Quiz';
-import HousePage from './components/pages/housePage/HousePage';
+// import HousePage from './components/pages/housePage/HousePage';
 
 function App() {
   return (
@@ -12,7 +12,6 @@ function App() {
       <Routes>
         <Route exact path="/" index element={<LandingPage />} />
         <Route path="/Home" index element={<Home />} />
-        <Route path="/HousePage/:house" component={HousePage} />
         <Route path="/Quiz" index element={<Quiz />} />
       </Routes>
     </Router>
