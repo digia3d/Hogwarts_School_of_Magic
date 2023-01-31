@@ -1,13 +1,32 @@
-import { React } from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './home.css';
 import Sparkles from 'react-sparkle';
 import Slytherin from '../../../assets/images/Slytherin.png';
-import Grifindor from '../../../assets/images/Grifindor.png';
-import Hufflepuf from '../../../assets/images/Hufflepuf.png';
+import Gryffindor from '../../../assets/images/Gryffindor.png';
+import Hufflepuff from '../../../assets/images/Hufflepuff.png';
 import Ravenclaw from '../../../assets/images/Ravenclaw.png';
+import { fetchCharactersByHouse } from '../../../redux/actions/characters';
+
+const houses = ['Gryffindor', 'Ravenclaw', 'Hufflepuff', 'Slytherin'];
+const houseImages = {
+  Gryffindor,
+  Ravenclaw,
+  Hufflepuff,
+  Slytherin,
+};
 
 function Home() {
+  const dispatch = useDispatch();
+  const characters = useSelector((state) => state.characters);
+
+  useEffect(() => {
+    if (characters && characters.house) {
+      dispatch(fetchCharactersByHouse(characters.house));
+    }
+  }, [dispatch, characters.house]);
+
   return (
     <>
       <section className="home-section">
@@ -22,28 +41,20 @@ function Home() {
         />
         <h1 className="welcome-title">Hogwarts houses</h1>
         <div className="house-cards">
-          <card>
-            Grifindor
-            <div>
-              <img src={Grifindor} alt="grifindor" />
+          {houses.map((house) => (
+            <div key={house}>
+              <Link
+                to={{
+                  pathname: `/HousePage/${house}`,
+                  state: { house },
+                }}
+                onClick={() => dispatch(fetchCharactersByHouse(house))}
+              >
+                <img src={houseImages[house]} alt={house} />
+                <p>{ house }</p>
+              </Link>
             </div>
-          </card>
-          <card>
-            Ravenclaw
-            <div>
-              <img src={Ravenclaw} alt="ravenclaw" />
-            </div>
-          </card>
-          <card>
-            Hufflepuf
-            <img src={Hufflepuf} alt="hafflepuf" />
-          </card>
-          <card>
-            Slyterin
-            <div className="imgH">
-              <img src={Slytherin} alt="slytherin" />
-            </div>
-          </card>
+          ))}
         </div>
         <div className="btn-container">
           <p>In which house do you belong?</p>
