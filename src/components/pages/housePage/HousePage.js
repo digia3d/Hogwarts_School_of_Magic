@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import PropTypes from 'prop-types';
+import { useParams } from 'react-router-dom';
 
-function HousePage({ house }) {
+function HousePage() {
   const [characters, setCharacters] = useState([]);
+  const { house } = useParams();
 
   useEffect(() => {
     axios
       .get(`https://hp-api.onrender.com/api/characters/house/${house}`)
       .then((response) => {
-        setCharacters(response.data);
+        setCharacters(response.data.slice(0, 10));
       })
       .catch((error) => {
         console.log(error);
@@ -30,9 +31,5 @@ function HousePage({ house }) {
     </div>
   );
 }
-
-HousePage.propTypes = {
-  house: PropTypes.string.isRequired,
-};
 
 export default HousePage;
