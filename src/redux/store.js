@@ -1,8 +1,18 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
-import rootReducer from './reducers/characters';
+import charactersReducer from './reducers/characters';
 
-const initialState = {};
+const rootReducer = combineReducers({
+  characters: charactersReducer,
+});
+
+const initialState = {
+  characters: {
+    loading: false,
+    characters: [],
+    error: null,
+  },
+};
 
 const store = configureStore({
   reducer: rootReducer,

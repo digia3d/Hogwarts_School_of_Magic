@@ -22,10 +22,10 @@ function Home() {
   const characters = useSelector((state) => state.characters);
 
   useEffect(() => {
-    if (characters.house) {
+    if (characters && characters.house) {
       dispatch(fetchCharactersByHouse(characters.house));
     }
-  }, [dispatch, characters.houses]);
+  }, [dispatch, characters.house]);
 
   return (
     <>
