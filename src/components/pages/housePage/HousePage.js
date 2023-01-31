@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import './HousePage.css';
 
 function HousePage() {
   const [characters, setCharacters] = useState([]);
@@ -18,14 +19,33 @@ function HousePage() {
   }, [house]);
 
   return (
-    <div>
+    <div className="house-page">
       {characters.map((character) => (
         <div className="character-card" key={character.id}>
           <p>{character.name}</p>
           <p>{character.house}</p>
           <p>{character.bloodStatus}</p>
           <p>{character.species}</p>
-          <img src={character.image} alt={character.name} />
+          <p>{character.dateOfBirth}</p>
+          <p>{character.ancestry}</p>
+          <p>{character.patronus}</p>
+          <p>{character.actor}</p>
+          <p>{character.alive}</p>
+          <p>
+            Wood:
+            {character.wand.wood}
+          </p>
+          <p>
+            Core:
+            {character.wand.core}
+          </p>
+          <p>
+            Length:
+            {character.wand.length}
+          </p>
+          <div className="image-container">
+            <img className="charimg" src={character.image} alt={character.name} />
+          </div>
         </div>
       ))}
     </div>
