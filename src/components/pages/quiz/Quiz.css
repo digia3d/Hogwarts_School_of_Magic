@@ -71,7 +71,7 @@
 button {
   width: 26vw;
   font-size: calc(4px + 0.7vw);
-  color: #ffffff;
+  color: #fff;
   background-color: transparent;
   border-radius: 7px;
   display: flex;
