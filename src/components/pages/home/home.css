@@ -54,3 +54,40 @@ card {
   width: 140px;
   height: 140px;
 }
+
+.quiz-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  transform: translate(-10%, -10%);
+  color: #c0972f;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.quiz-link a {
+  color: #c0972f;
+  text-decoration: none;
+}
+
+.quiz-link a:hover {
+  color: #f6f1e5;
+  text-decoration: underline;
+}
+
+.hat-question {
+  font-size: 2rem;
+  color: #c0972f;
+}
+
+.sorting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}

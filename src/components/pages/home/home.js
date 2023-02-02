@@ -51,14 +51,18 @@ function Home() {
                 onClick={() => dispatch(fetchCharactersByHouse(house))}
               >
                 <img src={houseImages[house]} alt={house} />
-                <p>{ house }</p>
               </Link>
             </div>
           ))}
         </div>
         <div className="btn-container">
-          <p>In which house do you belong?</p>
-          <Link to="/Quiz" type="button">Sorting Hat</Link>
+          <p className="hat-question">In which house do you belong?</p>
+        </div>
+        <div className="quiz-link">
+          <Link to="/Quiz" type="button">
+            <p className="sorting">Sorting Hat</p>
+            <img src="https://media.giphy.com/media/9EnuwMN4qxFoDfnJam/giphy.gif" alt="Sorting Hat Animation" />
+          </Link>
         </div>
       </section>
     </>
