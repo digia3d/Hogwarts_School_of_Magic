@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './home.css';
@@ -7,6 +7,7 @@ import Slytherin from '../../../assets/images/Slytherin.png';
 import Gryffindor from '../../../assets/images/Gryffindor.png';
 import Hufflepuff from '../../../assets/images/Hufflepuff.png';
 import Ravenclaw from '../../../assets/images/Ravenclaw.png';
+import hpSound from '../../../assets/audio/hpSound.mp3';
 import { fetchCharactersByHouse } from '../../../redux/actions/characters';
 
 const houses = ['Gryffindor', 'Ravenclaw', 'Hufflepuff', 'Slytherin'];
@@ -20,12 +21,21 @@ const houseImages = {
 function Home() {
   const dispatch = useDispatch();
   const characters = useSelector((state) => state.characters);
+  const audioRef = useRef(null);
+  const [audioPlaying, setAudioPlaying] = useState(false);
 
   useEffect(() => {
     if (characters && characters.house) {
       dispatch(fetchCharactersByHouse(characters.house));
     }
   }, [dispatch, characters.house]);
+
+  useEffect(() => {
+    if (!audioPlaying) {
+      setAudioPlaying(true);
+      audioRef.current.play();
+    }
+  }, [audioPlaying, audioRef]);
 
   return (
     <>
@@ -64,6 +74,9 @@ function Home() {
             <img src="https://media.giphy.com/media/9EnuwMN4qxFoDfnJam/giphy.gif" alt="Sorting Hat Animation" />
           </Link>
         </div>
+        <audio ref={audioRef} src={hpSound} autoPlay loop>
+          <track kind="captions" />
+        </audio>
       </section>
     </>
   );
