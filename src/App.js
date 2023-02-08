@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
 import Home from './components/pages/home/home';
 import LandingPage from './components/pages/leandingPage/landingPage';
 import Quiz from './components/pages/quiz/Quiz';

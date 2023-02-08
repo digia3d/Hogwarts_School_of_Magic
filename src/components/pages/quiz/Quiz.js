@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { questions } from '../../../data/Question';
+import './Quiz.css';
 
 function Quiz() {
   // Questions and house reveal setters
@@ -67,14 +68,14 @@ function Quiz() {
     changeBanner();
   });
   return (
-    <div>
+    <div className="quiz">
       <div className="main-title">
         <h1>The Sorting Hat</h1>
       </div>
       <div
         className="app"
         style={{
-          borderRadius: '7px', backgroundPosition: '50%', backgroundBlendMode: 'normal', backgroundImage: `url(${banner})`,
+          borderRadius: '7px', backgroundPosition: '100%', backgroundBlendMode: 'normal', backgroundImage: `url(${banner})`,
         }}
       >
         {showQuiz ? (
@@ -87,7 +88,7 @@ function Quiz() {
               </div>
             ) : (
               <>
-                <div className="part two">
+                <div className="part-two">
                   <div className="question-section">
                     <div className="question-count">
                       <span>
