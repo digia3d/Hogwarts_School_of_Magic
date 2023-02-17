@@ -21,25 +21,35 @@ function HousePage() {
   return (
     <div className="house-page">
       {characters.map((character) => (
-        <div className="character-card" key={character.id}>
-          <p>{character.name}</p>
-          <p>{character.house}</p>
-          <p>{character.bloodStatus}</p>
-          <p>{character.species}</p>
-          <p>{character.dateOfBirth}</p>
-          <p>{character.ancestry}</p>
-          <p>{character.patronus}</p>
-          <p>{character.actor}</p>
-          <p>{character.alive}</p>
-          <p>
+        <div className="character-card grid-container" key={character.id}>
+          <p className="grid-item"><strong>Name:</strong></p>
+          <p className="grid-item">{character.name}</p>
+          <p className="grid-item"><strong>House:</strong></p>
+          <p className="grid-item">{character.house}</p>
+          <p className="grid-item"><strong>Blood Status:</strong></p>
+          <p className="grid-item">{character.bloodStatus}</p>
+          <p className="grid-item"><strong>Species:</strong></p>
+          <p className="grid-item">{character.species}</p>
+          <p className="grid-item"><strong>Date of Birth:</strong></p>
+          <p className="grid-item">{character.dateOfBirth}</p>
+          <p className="grid-item"><strong>Year of Birth:</strong></p>
+          <p className="grid-item">{character.ancestry}</p>
+          <p className="grid-item"><strong>Patronus:</strong></p>
+          <p className="grid-item">{character.patronus}</p>
+          <p className="grid-item"><strong>Actor:</strong></p>
+          <p className="grid-item">{character.actor}</p>
+          <p className="grid-item"><strong>Alive:</strong></p>
+          <p className="grid-item">{character.alive}</p>
+          <p className="grid-item"><strong>Wand:</strong></p>
+          <p className="grid-item">
             Wood:
             {character.wand.wood}
           </p>
-          <p>
+          <p className="grid-item">
             Core:
             {character.wand.core}
           </p>
-          <p>
+          <p className="grid-item">
             Length:
             {character.wand.length}
           </p>

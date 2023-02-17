@@ -17,16 +17,32 @@ body {
   padding: 10px;
 }
 
-.character-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  margin: 10px;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 5px;
+  border: #c0972f 3px solid;
+}
+
+.grid-item {
+  color: #faf9f9;
   padding: 10px;
+  border: 1px solid #c0972f;
+}
+
+.character-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.character-card p {
+  margin: 0;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .charimg {
