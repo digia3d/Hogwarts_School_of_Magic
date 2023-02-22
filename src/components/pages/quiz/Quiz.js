@@ -75,17 +75,31 @@ function Quiz() {
       <div
         className="app"
         style={{
-          borderRadius: '7px', backgroundPosition: '100%', backgroundBlendMode: 'normal', backgroundImage: `url(${banner})`,
+          borderRadius: '7px',
+          backgroundPosition: '100%',
+          backgroundBlendMode: 'normal',
+          backgroundImage: `url(${banner})`,
         }}
       >
         {showQuiz ? (
           <div>
             {showHouse ? (
-              <div className="result">
-                <h2>You belong in</h2>
-                <br />
-                <p className="house">{house}</p>
-              </div>
+              <>
+                <div className="result">
+                  <h2>You belong in</h2>
+                  <br />
+                  <p className="house">{house}</p>
+                </div>
+                <button
+                  type="button"
+                  className="back-button"
+                  onClick={() => {
+                    window.location.href = '/';
+                  }}
+                >
+                  Back
+                </button>
+              </>
             ) : (
               <>
                 <div className="part-two">
@@ -102,7 +116,20 @@ function Quiz() {
                   </div>
                   <div className="answer-section">
                     {questions[currentQuestion].answerOptions.map((answerOption) => (
-                      <button type="button" key={answerOption.id} onClick={() => { answerHandler(answerOption.gryffindor, answerOption.slytherin, answerOption.ravenclaw, answerOption.hufflepuff); }}>{answerOption.optionText}</button>
+                      <button
+                        type="button"
+                        key={answerOption.id}
+                        onClick={() => {
+                          answerHandler(
+                            answerOption.gryffindor,
+                            answerOption.slytherin,
+                            answerOption.ravenclaw,
+                            answerOption.hufflepuff,
+                          );
+                        }}
+                      >
+                        {answerOption.optionText}
+                      </button>
                     ))}
                   </div>
                 </div>
@@ -114,12 +141,18 @@ function Quiz() {
             <div className="intro-part">
               <div className="intro-text">
                 <p>
-                  Welcome to the Grand Hall! Here you&apos;ll be asked a series of questions,
-                  and you must answer as truthfully as you can.
-                  By the end, the hat will decide and tell you where you belong.
+                  Welcome to the Grand Hall! Here you&apos;ll be asked a series of questions, and
+                  you must answer as truthfully as you can. By the end, the hat will decide and tell
+                  you where you belong.
                 </p>
               </div>
-              <button type="button" className="start-button button-loader" onClick={() => setShowQuiz(true)}>Start</button>
+              <button
+                type="button"
+                className="start-button button-loader"
+                onClick={() => setShowQuiz(true)}
+              >
+                Start
+              </button>
             </div>
           </>
         )}
