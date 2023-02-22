@@ -73,7 +73,7 @@ function Quiz() {
         <h1>The Sorting Hat</h1>
       </div>
       <div
-        className="app"
+        className="app banner"
         style={{
           borderRadius: '7px',
           backgroundPosition: '100%',
