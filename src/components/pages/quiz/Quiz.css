@@ -24,8 +24,8 @@
   min-height: 3vh;
   height: max-content;
   border-radius: 15px;
-  padding: 6%;
-  margin-top: 15%;
+  padding: 5%;
+  margin-top: 5%;
   margin-bottom: 0%;
   box-shadow: 10px 10px 42px 0 rgba(0, 0, 0, 0.75);
   display: flex;
@@ -57,7 +57,12 @@
   margin-bottom: 1.8vh;
   line-height: 1.6;
   animation: fadein 0.5s;
-  font-size: calc(5px + 0.8vw);
+  font-size: 1rem;
+  color: #c0972f;
+}
+
+.question-count {
+  color: #c0972f;
 }
 
 .answer-section {
@@ -70,15 +75,23 @@
 
 button {
   width: 26vw;
-  color: #010101;
+  color: #c0972f;
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 700;
   border-radius: 7px;
   display: flex;
   padding: 3%;
   margin-bottom: 8px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #927c6c;
+  border: 1px solid #c0972f;
   cursor: pointer;
   transition: 0.5s;
   align-self: center;
+}
+
+.banner {
+  background-position: center;
+  background-size: cover;
 }

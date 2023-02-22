@@ -9,16 +9,32 @@ body {
 .house-page {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  grid-gap: 5px;
+  margin-top: 4rem;
   grid-template-areas:
+    "house__name house__name"
     "house-info house-info"
     "house-characters house-characters";
-  grid-gap: 5px;
+}
+
+.house__name {
+  grid-area: house__name;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-bottom: #c0972f 3px solid;
+  color: #c0972f;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
+  grid-template-areas:
+    "house__name house__name"
+    "house-info house-info"
+    "house-characters house-characters";
   grid-gap: 3px;
   border: #c0972f 3px solid;
 }
