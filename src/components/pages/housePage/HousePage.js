@@ -20,6 +20,7 @@ function HousePage() {
 
   return (
     <div className="house-page">
+      <div className="house__name">{house}</div>
       {characters.map((character) => (
         <div className="character-card grid-container" key={character.id}>
           <p className="grid-item"><strong>Name:</strong></p>
