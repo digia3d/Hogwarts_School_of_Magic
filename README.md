@@ -37,8 +37,6 @@
 
 ****
 
-> Describe your project in 1 or 2 sentences.
-
 **[Hogwarts]** is a fun app for Harry Potter fans who want to check which Hogwarts house they would fit into. And to see 10 most popular characters from each house.
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -85,7 +83,7 @@
 ### Preview <a name="preview"></a>
 
 <div align="center">
-  <img src="Screenshot from Hogwarts.png" alt="screenshot" width="100%"  height="auto" />
+  <img src="Screenshot_from_Hogwarts.png" alt="screenshot" width="100%"  height="auto" />
   <br/>
 </div>
 
