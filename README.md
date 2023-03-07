@@ -25,6 +25,7 @@
   - [Usage](#usage)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -73,7 +74,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Logs in the User using the username]**
+- **[]**
 - **[Presents a list of characters from specific house]**
 - **[Lets the user view the details of a character]**
 - **[Lets the user to take a quiz to find out which house they belong to]**
@@ -163,6 +164,12 @@ You can deploy the project to Netlify by following these steps:
 - LinkedIn: [Aleksandra (Digital Marketing A3D) Ujvari](https://www.linkedin.com/in/aleksandra-ujvari-85235a210/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [Login] **[Logs in the User using the username]**
 
 <!-- CONTRIBUTING -->
 
