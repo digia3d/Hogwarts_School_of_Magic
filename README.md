@@ -85,7 +85,7 @@
 ### Preview <a name="preview"></a>
 
 <div align="center">
-  <img src="Screenshot from Hogwarts.png" alt="screenshot" width="100%"  height="auto" />
+  <img src="Screenshot_from_Hogwarts.png" alt="screenshot" width="100%"  height="auto" />
   <br/>
 </div>
 
