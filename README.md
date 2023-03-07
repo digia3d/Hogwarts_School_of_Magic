@@ -74,7 +74,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[]**
 - **[Presents a list of characters from specific house]**
 - **[Lets the user view the details of a character]**
 - **[Lets the user to take a quiz to find out which house they belong to]**
