@@ -104,6 +104,8 @@ After you're finished please remove all the comments and instructions!
 
 <!-- Preview -->
 
+### Preview <a name="preview"></a>
+
 <div align="center">
   <img src="Screenshot from Hogwarts.png" alt="screenshot" width="100%"  height="auto" />
   <br/>
