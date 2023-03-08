@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-image: url(.../../../../assets/images/Nenaslovljeni\ dizajn.png);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgb(92, 92, 106);
+  background-position: bottom;
+  min-height: 100vh;
+  color: rgb(192, 151, 47);
+}
+
+span {
+  font-size: larger;
+  color: rgb(192, 151, 47);
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.leanding-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  font-size: 1.7rem;
+  color: azure;
+}
+
+h1 {
+  color: rgb(192, 151, 47);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.logo img {
+  max-width: 10%;
+}

@@ -1,0 +1,97 @@
+.quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.main-title {
+  font-family: 'MonteCarlo', cursive;
+  font-size: 3.5vw;
+  top: 5%;
+  right: 37.5%;
+  align-content: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.app {
+  z-index: 1;
+  border: 2px solid #927c6c;
+  width: 48vw;
+  min-height: 3vh;
+  height: max-content;
+  border-radius: 15px;
+  padding: 5%;
+  margin-top: 5%;
+  margin-bottom: 0%;
+  box-shadow: 10px 10px 42px 0 rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: space-evenly;
+  animation: fadein 2s;
+}
+
+.intro-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.intro-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #c0972f;
+  margin: 10px;
+}
+
+.question-section {
+  width: 100%;
+  position: relative;
+  animation: fadein 2s;
+}
+
+.question-text {
+  margin-bottom: 1.8vh;
+  line-height: 1.6;
+  animation: fadein 0.5s;
+  font-size: 1rem;
+  color: #c0972f;
+}
+
+.question-count {
+  color: #c0972f;
+}
+
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: fadein 2s;
+}
+
+button {
+  width: 26vw;
+  color: #c0972f;
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 7px;
+  display: flex;
+  padding: 3%;
+  margin-bottom: 8px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c0972f;
+  cursor: pointer;
+  transition: 0.5s;
+  align-self: center;
+}
+
+.banner {
+  background-position: center;
+  background-size: cover;
+}
