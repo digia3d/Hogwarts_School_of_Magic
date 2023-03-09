@@ -95,7 +95,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link coming-soon]()
+- [Live Demo Link coming-soon](https://hogwartsschool.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
