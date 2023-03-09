@@ -40,6 +40,9 @@ function Home() {
   return (
     <>
       <section className="home-section">
+        <Link to="/landingPage" className="back">
+          <span className="material-symbols-outlined">arrow_back_ios</span>
+        </Link>
         <Sparkles
           color="white"
           minSize={7}

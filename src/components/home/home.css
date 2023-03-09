@@ -91,3 +91,9 @@ card {
   margin: 20px;
   padding: 20px;
 }
+
+span {
+  font-size: larger;
+  color: rgb(192, 151, 47);
+  font-weight: bold;
+}

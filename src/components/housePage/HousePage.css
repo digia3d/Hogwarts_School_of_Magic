@@ -67,3 +67,9 @@ body {
   border-radius: 30px;
   border: 2px solid #c0972f;
 }
+
+span {
+  font-size: larger;
+  color: rgb(192, 151, 47);
+  font-weight: bold;
+}

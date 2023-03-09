@@ -13,6 +13,7 @@ function App() {
         <Route path="/Home" index element={<Home />} />
         <Route path="/HousePage/:house" index element={<HousePage />} />
         <Route path="/Quiz" index element={<Quiz />} />
+        <Route path="/landingPage" component={LandingPage} />
       </Routes>
     </Router>
   );
