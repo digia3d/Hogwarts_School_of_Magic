@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/pages/home/home';
-import LandingPage from './components/pages/leandingPage/landingPage';
-import Quiz from './components/pages/quiz/Quiz';
-import HousePage from './components/pages/housePage/HousePage';
+import Home from './components/home/home';
+import LandingPage from './components/leandingPage/landingPage';
+import Quiz from './components/quiz/Quiz';
+import HousePage from './components/housePage/HousePage';
 
 function App() {
   return (
