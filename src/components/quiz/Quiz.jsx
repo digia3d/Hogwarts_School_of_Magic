@@ -94,7 +94,7 @@ function Quiz() {
                   type="button"
                   className="back-button"
                   onClick={() => {
-                    window.location.href = '/';
+                    window.location.href = '/Home';
                   }}
                 >
                   Back

@@ -50,7 +50,7 @@ function Home() {
           count={120}
         />
         <h1 className="welcome-title">
-          <Link to="/landingPage" className="back" href="/LandingPage">
+          <Link to="/LandingPage" className="back" href="/LandingPage">
             <span className="material-symbols-outlined">arrow_back_ios</span>
           </Link>
           Hogwarts houses

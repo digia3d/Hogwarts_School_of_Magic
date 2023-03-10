@@ -77,7 +77,8 @@ button {
   width: 26vw;
   color: #c0972f;
   background-color: transparent;
-  font-size: 1.5rem;
+  /* stylelint-disable-next-line csstree/validator */
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
   font-weight: 700;
   border-radius: 7px;
   display: flex;
@@ -91,7 +92,21 @@ button {
   align-self: center;
 }
 
+.back-button {
+  color: #fbf7f7;
+}
+
 .banner {
   background-position: center;
   background-size: cover;
+}
+
+@media (max-width: 480px) {
+  .app {
+    width: 44vh;
+  }
+
+  button {
+    width: 40vh;
+  }
 }
