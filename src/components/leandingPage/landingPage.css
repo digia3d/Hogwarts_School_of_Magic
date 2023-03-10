@@ -36,6 +36,8 @@ a {
 
 h1 {
   color: rgb(192, 151, 47);
+  /* stylelint-disable-next-line csstree/validator */
+  font-size: clamp(2rem, 5vw, 3rem);
 }
 
 .logo {

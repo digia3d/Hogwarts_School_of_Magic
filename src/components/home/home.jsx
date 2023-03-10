@@ -40,9 +40,6 @@ function Home() {
   return (
     <>
       <section className="home-section">
-        <Link to="/landingPage" className="back">
-          <span className="material-symbols-outlined">arrow_back_ios</span>
-        </Link>
         <Sparkles
           color="white"
           minSize={7}
@@ -52,7 +49,12 @@ function Home() {
           flicker={false}
           count={120}
         />
-        <h1 className="welcome-title">Hogwarts houses</h1>
+        <h1 className="welcome-title">
+          <Link to="/landingPage" className="back" href="/LandingPage">
+            <span className="material-symbols-outlined">arrow_back_ios</span>
+          </Link>
+          Hogwarts houses
+        </h1>
         <div className="house-cards">
           {houses.map((house) => (
             <div key={house}>

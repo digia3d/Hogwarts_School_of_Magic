@@ -46,7 +46,11 @@ body {
 
 .character-card {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 2fr);
+}
+
+.character-card > div:last-child {
+  grid-column: 1 / -1; /* span across all columns */
 }
 
 .character-card p {
@@ -72,4 +76,37 @@ span {
   font-size: larger;
   color: rgb(192, 151, 47);
   font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .house-page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .house__name {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    border-bottom: #c0972f 2px solid;
+  }
+
+  .grid-container {
+    border: #c0972f 2px solid;
+  }
+
+  .grid-item {
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+  }
+
+  .charimg {
+    max-width: 100%;
+    /* stylelint-disable-next-line csstree/validator */
+    max-height: auto;
+    min-width: 0;
+    min-height: 0;
+    border-radius: 0;
+    border: none;
+  }
 }
