@@ -79,8 +79,9 @@ card {
 }
 
 .hat-question {
-  font-size: 2rem;
   color: #c0972f;
+  /* stylelint-disable-next-line csstree/validator */
+  font-size: clamp(1rem, 4vw, 2rem);
 }
 
 .sorting {
@@ -96,4 +97,11 @@ span {
   font-size: larger;
   color: rgb(192, 151, 47);
   font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .sorting img {
+    max-width: 30%;
+    height: auto;
+  }
 }
