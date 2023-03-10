@@ -118,7 +118,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-```bash
+```sh
 $ git clone https://github.com/digia3d/Hogwarts.git
 ```
 
