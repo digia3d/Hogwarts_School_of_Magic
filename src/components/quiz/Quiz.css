@@ -31,6 +31,8 @@
   display: flex;
   justify-content: space-evenly;
   animation: fadein 2s;
+  /* stylelint-disable-next-line csstree/validator */
+  font-size: clamp(0.8rem, 4vw, 1rem);
 }
 
 .intro-part {
@@ -78,7 +80,7 @@ button {
   color: #c0972f;
   background-color: transparent;
   /* stylelint-disable-next-line csstree/validator */
-  font-size: clamp(1.2rem, 4vw, 1.5rem);
+  font-size: clamp(1rem, 4vw, 1.5rem);
   font-weight: 700;
   border-radius: 7px;
   display: flex;
