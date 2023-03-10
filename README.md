@@ -127,7 +127,8 @@ $ git clone https://github.com/digia3d/Hogwarts.git
 Install this project with:
 
 ```bash
-  cd hogwarts
+  cd Hogwarts_School_of_Magic
+
   npm install
 ```
 
