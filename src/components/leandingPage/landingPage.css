@@ -37,7 +37,7 @@ a {
 h1 {
   color: rgb(192, 151, 47);
   /* stylelint-disable-next-line csstree/validator */
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(1rem, 4vw, 2rem);
 }
 
 .logo {
@@ -49,4 +49,10 @@ h1 {
 
 .logo img {
   max-width: 10%;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    text-align: center;
+  }
 }
