@@ -1,6 +1,5 @@
 {
   "name": "hp",
-  "homepage": "https://hogwartsschool.netlify.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,7 +8,6 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
-    "netlify-cli": "^13.1.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-axios": "^2.0.6",
@@ -22,9 +20,7 @@
     "redux": "^4.2.0",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.2",
-    "web-vitals": "^2.1.4",
-    "glob-parent": ">=5.1.2",
-    "http-cache-semantics": ">=4.1.1"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -64,8 +60,6 @@
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0",
-    "glob-parent": ">=5.1.2",
-    "http-cache-semantics": ">=4.1.1"
+    "stylelint-scss": "^3.21.0"
   }
 }

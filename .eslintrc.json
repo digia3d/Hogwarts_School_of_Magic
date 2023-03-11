@@ -19,8 +19,7 @@
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
     "import/prefer-default-export": "off",
-    "no-shadow": "off",
-    "no-console": "off"
+    "no-shadow": "off"
   },
   "ignorePatterns": [
     "dist/",
