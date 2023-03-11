@@ -103,7 +103,7 @@ button {
   background-size: cover;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
   .app {
     width: 44vh;
   }
