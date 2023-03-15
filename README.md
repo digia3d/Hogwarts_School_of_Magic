@@ -4,7 +4,8 @@
   <img src="https://digitalnimarketinga3d.com/wp-content/uploads/2021/06/A3D-LOGO-1.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Hogwarts</b></h3>
+  <h3><b>Hogwarts_School_of_Magic
+</b></h3>
 
 </div>
 
@@ -38,7 +39,8 @@
 
 ****
 
-**[Hogwarts]** is a fun app for Harry Potter fans who want to check which Hogwarts house they would fit into. And to see 10 most popular characters from each house.
+**[Hogwarts]**Hogwarts_School_of_Magic
+ is a fun app for Harry Potter fans who want to check which Hogwarts house they would fit into. And to see 10 most popular characters from each house.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -93,7 +95,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+<!-- Add a link to your deployed project. -->
 
 - [Live Demo](https://hogwartsschool.netlify.app)
 
