@@ -156,7 +156,7 @@ You can deploy the project to Netlify by following these steps:
 
 <!-- AUTHOR -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 👤 **Aleksandra Ujvari**
 
