@@ -35,11 +35,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Hogwarts] <a name="about-project"></a>
+# 📖 [Hogwarts_School_of_Magic] <a name="about-project"></a>
 
 ****
 
-**[Hogwarts]**Hogwarts_School_of_Magic
+**Hogwarts_School_of_Magic**
  is a fun app for Harry Potter fans who want to check which Hogwarts house they would fit into. And to see 10 most popular characters from each house.
 
 ## 🛠 Built With <a name="built-with"></a>
