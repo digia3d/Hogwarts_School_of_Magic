@@ -1,3 +1,3 @@
-const URL_API = 'https://hp-api.onrender.com/api/charactershouse/:house';
+const URL_API = 'https://school-of-magic-api.onrender.com/api/v1/characters';
 
 export default URL_API;
