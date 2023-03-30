@@ -7,7 +7,7 @@ export const FETCH_CHARACTERS_FAIL = 'FETCH_CHARACTERS_FAIL';
 export const fetchCharactersByHouse = (house) => (dispatch) => {
   dispatch({ type: FETCH_CHARACTERS_START });
   axios
-    .get(`https://hp-api.onrender.com/api/charactershouse/${house}`)
+    .get(`https://school-of-magic-api.onrender.com/api/v1/houses/${house}/characters`)
     .then((res) => {
       dispatch({ type: FETCH_CHARACTERS_SUCCESS, payload: res.data });
     })

@@ -13,26 +13,40 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_CHARACTERS_START:
+    case FETCH_CHARACTERS_START: {
       return {
         ...state,
         isLoading: true,
         error: null,
         house: action.payload,
       };
-    case FETCH_CHARACTERS_SUCCESS:
+    }
+    case FETCH_CHARACTERS_SUCCESS: {
+      const sortedCharacters = action.payload.sort((a, b) => {
+        if (a.house.name < b.house.name) {
+          return -1;
+        }
+        if (a.house.name > b.house.name) {
+          return 1;
+        }
+        return 0;
+      });
+
       return {
         ...state,
         isLoading: false,
-        characters: action.payload,
+        characters: sortedCharacters,
       };
-    case FETCH_CHARACTERS_FAIL:
+    }
+    case FETCH_CHARACTERS_FAIL: {
       return {
         ...state,
         isLoading: false,
         error: action.payload,
       };
-    default:
+    }
+    default: {
       return state;
+    }
   }
 };
