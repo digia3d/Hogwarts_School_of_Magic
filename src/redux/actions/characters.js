@@ -9,7 +9,7 @@ export const fetchCharactersByHouse = (houseName) => async (dispatch) => {
 
   try {
     const res = await axios.get(
-      `http://localhost:3000/api/v1/houses/${houseName}/characters`,
+      `http://school-of-magic-api.onrender.com/api/v1/houses/${houseName}/characters`,
     );
 
     dispatch({
