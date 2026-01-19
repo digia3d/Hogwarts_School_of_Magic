@@ -96,7 +96,7 @@ function HousePage() {
                 {character.wand.length || '-'}
               </p>
               <div className="image-container">
-                <img className="charimg" src={character.image} alt={character.name} />
+                <img className="charimg" src={character.image_url} alt={character.name} />
               </div>
             </div>
           ),
