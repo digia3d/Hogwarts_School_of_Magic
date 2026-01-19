@@ -1,34 +1,30 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import { fetchCharactersByHouse } from '../../redux/actions/characters';
 import './HousePage.css';
 
 function HousePage() {
-  const [characters, setCharacters] = useState([]);
+  const dispatch = useDispatch();
   const { house } = useParams();
 
+  const { characters, isLoading, error } = useSelector(
+    (state) => state.characters,
+  );
+
   useEffect(() => {
-    axios
-      .get('https://school-of-magic-api.onrender.com/api/v1/characters')
-      .then((response) => {
-        const sortedCharacters = response.data.sort((a, b) => {
-          if (a.house.name < b.house.name) {
-            return -1;
-          }
-          if (a.house.name > b.house.name) {
-            return 1;
-          }
-          return 0;
-        });
-        const filteredCharacters = sortedCharacters.filter(
-          (character) => character.house.name === house,
-        );
-        setCharacters(filteredCharacters.slice(0, 10));
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, [house]);
+    dispatch(fetchCharactersByHouse(house));
+  }, [dispatch, house]);
+
+  if (isLoading) return <p>Loading...</p>;
+  if (error) {
+    return (
+      <p>
+        Error:
+        {error}
+      </p>
+    );
+  }
 
   return (
     <div className="house-page">

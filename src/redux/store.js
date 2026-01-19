@@ -8,7 +8,7 @@ const rootReducer = combineReducers({
 
 const initialState = {
   characters: {
-    loading: false,
+    isLoading: false,
     characters: [],
     error: null,
   },
