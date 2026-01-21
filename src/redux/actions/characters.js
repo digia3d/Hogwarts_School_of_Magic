@@ -17,7 +17,7 @@ export const fetchCharactersByHouse = (houseName) => async (dispatch) => {
     const houseId = houseIds[houseName];
     if (!houseId) throw new Error('Invalid house name');
     const res = await axios.get(
-      `https://school-of-magic-api.onrender.com/api/v1/houses/${houseId}/characters`,
+      `https://school-of-magic-api.onrender.com/api/v1/characters`,
     );
 
     dispatch({
