@@ -27,14 +27,15 @@ function HousePage() {
   }
 
   return (
-    <div className="house-page">
+    <>
       <div className="house__name">
         <a href="/home" className="back">
           <span className="material-symbols-outlined">arrow_back_ios</span>
         </a>
         {house}
       </div>
-      {characters.length > 0
+      <div className="house-page">
+        {characters.length > 0
         && characters.map(
           (character) => character && (
             <div className="character-card grid-container" key={character.id}>
@@ -97,7 +98,8 @@ function HousePage() {
             </div>
           ),
         )}
-    </div>
+      </div>
+    </>
   );
 }
 
