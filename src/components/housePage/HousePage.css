@@ -19,13 +19,16 @@ body {
 }
 
 .house__name {
-  grid-area: house__name;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centriramo naslov */
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 1rem;
-  border-bottom: #c0972f 3px solid;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #c0972f;
   color: #c0972f;
+  position: relative;
 }
 
 .grid-container {
@@ -37,6 +40,7 @@ body {
     "house-characters house-characters";
   grid-gap: 3px;
   border: #c0972f 3px solid;
+  padding: 1rem;
 }
 
 .grid-item {
@@ -45,8 +49,7 @@ body {
 }
 
 .character-card {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-column: span 1;
 }
 
 .character-card > div:last-child {
@@ -55,20 +58,21 @@ body {
 
 .character-card p {
   margin: 0;
+  order: 2;
 }
 
 .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  order: 1;
 }
 
 .charimg {
-  max-width: 100px;
-  max-height: 200px;
-  min-width: 200px;
-  min-height: 300px;
-  border-radius: 30px;
+  width: 180px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 20px;
   border: 2px solid #c0972f;
 }
 
